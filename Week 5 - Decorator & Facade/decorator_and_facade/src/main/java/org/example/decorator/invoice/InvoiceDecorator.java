@@ -1,4 +1,4 @@
-package org.example.invoice;
+package org.example.decorator.invoice;
 
 public abstract class InvoiceDecorator implements InvoicePrice {
     protected InvoicePrice invoicePrice;

@@ -1,4 +1,4 @@
-package org.example.invoice;
+package org.example.decorator.invoice;
 
 public class Invoice implements InvoicePrice {
     private final double price;

@@ -1,4 +1,4 @@
-package org.example.user;
+package org.example.decorator.user;
 
 import java.util.Date;
 

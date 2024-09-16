@@ -1,4 +1,4 @@
-package org.example.report;
+package org.example.decorator.report;
 
 public class ReportWithSubject extends ReportDecorator {
     private String subject;

@@ -1,4 +1,4 @@
-package org.example.invoice;
+package org.example.decorator.invoice;
 
 public interface InvoicePrice {
     double getPrice();

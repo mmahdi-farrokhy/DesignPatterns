@@ -1,4 +1,4 @@
-package org.example.report;
+package org.example.decorator.report;
 
 public class ReportsWithFooter extends ReportDecorator {
     private String footer;

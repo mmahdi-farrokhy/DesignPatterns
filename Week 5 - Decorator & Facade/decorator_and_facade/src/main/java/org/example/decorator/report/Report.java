@@ -1,4 +1,4 @@
-package org.example.report;
+package org.example.decorator.report;
 
 public class Report implements ReportGenerator {
     private final String title;

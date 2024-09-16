@@ -1,4 +1,4 @@
-package org.example.report;
+package org.example.decorator.report;
 
 public abstract class ReportDecorator implements ReportGenerator {
     ReportGenerator reportGenerator;
