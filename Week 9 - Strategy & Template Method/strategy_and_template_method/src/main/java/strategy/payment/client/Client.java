@@ -1,5 +1,7 @@
-package strategy.payment;
+package strategy.payment.client;
 
+import strategy.payment.Customer;
+import strategy.payment.Order;
 import strategy.payment.methods.CreditPayment;
 
 public class Client {

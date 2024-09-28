@@ -4,10 +4,9 @@ public class Order {
     private double price;
     private Customer customer;
 
-    public Order(double price, Customer customer, double distance) {
+    public Order(double price, Customer customer) {
         this.price = price;
         this.customer = customer;
-        this.distance = distance;
     }
 
     public double getPrice() {

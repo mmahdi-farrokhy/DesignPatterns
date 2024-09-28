@@ -1,4 +1,4 @@
-package strategy.delivery;
+package strategy.delivery.methods;
 
 import strategy.delivery.Order;
 

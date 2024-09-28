@@ -1,6 +1,5 @@
 package strategy.delivery.methods;
 
-import strategy.delivery.DeliveryMethod;
 import strategy.delivery.Order;
 
 public class MotorCycleDelivery implements DeliveryMethod {

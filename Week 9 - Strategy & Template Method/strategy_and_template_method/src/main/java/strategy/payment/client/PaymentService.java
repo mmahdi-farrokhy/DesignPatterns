@@ -1,4 +1,7 @@
-package strategy.payment;
+package strategy.payment.client;
+
+import strategy.payment.Order;
+import strategy.payment.methods.PaymentMethod;
 
 public class PaymentService {
     private PaymentMethod paymentMethod;

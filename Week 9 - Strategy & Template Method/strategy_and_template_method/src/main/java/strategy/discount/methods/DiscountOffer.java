@@ -1,4 +1,4 @@
-package strategy.discount;
+package strategy.discount.methods;
 
 import strategy.delivery.Order;
 

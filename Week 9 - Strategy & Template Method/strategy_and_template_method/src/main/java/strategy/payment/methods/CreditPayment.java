@@ -1,7 +1,6 @@
 package strategy.payment.methods;
 
 import strategy.payment.Order;
-import strategy.payment.PaymentMethod;
 
 public class CreditPayment implements PaymentMethod {
     @Override

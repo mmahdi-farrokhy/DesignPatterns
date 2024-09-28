@@ -1,5 +1,7 @@
-package strategy.delivery;
+package strategy.delivery.client;
 
+import strategy.delivery.Order;
+import strategy.delivery.methods.DeliveryMethod;
 import strategy.delivery.methods.ExpressDelivery;
 
 public class DeliveryController {

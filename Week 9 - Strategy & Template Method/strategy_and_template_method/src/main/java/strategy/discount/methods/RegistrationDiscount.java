@@ -1,7 +1,6 @@
 package strategy.discount.methods;
 
 import strategy.delivery.Order;
-import strategy.discount.DiscountOffer;
 
 import java.time.LocalDate;
 
