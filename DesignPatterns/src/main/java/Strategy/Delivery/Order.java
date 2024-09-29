@@ -1,28 +1,18 @@
 package Strategy.Delivery;
 
 import Strategy.Discount.User;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
+@Getter
 public class Order {
+    @NonNull
     private double price;
-    private double distance;
+    @NonNull
     private User user;
-
-    public Order(double price, User user) {
-        this.price = price;
-        this.user = user;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public double getDistance() {
-        return distance;
-    }
-
-    public User getUser() {
-        return user;
-    }
+    private double distance;
 
     public void updatePrice(double priceWithDiscount) {
         this.price = priceWithDiscount;

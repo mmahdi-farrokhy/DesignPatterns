@@ -1,14 +1,15 @@
 package ChainOfResponsibility.Loan.employee;
 
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public abstract class Employee {
+    @NonNull
     protected String fullName;
+    @NonNull
     protected double salary;
     private int activeLoans = 0;
-
-    public Employee(String fullName, double salary) {
-        this.fullName = fullName;
-        this.salary = salary;
-    }
 
     public abstract double calculateLoanLimit();
 

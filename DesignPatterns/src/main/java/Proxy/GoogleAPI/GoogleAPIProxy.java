@@ -1,15 +1,13 @@
 package Proxy.GoogleAPI;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Optional;
 
+@AllArgsConstructor
 public class GoogleAPIProxy implements GoogleApiInterface {
     private final GoogleApiInterface googleApi;
     private final ApplicationService applicationService;
-
-    public GoogleAPIProxy(GoogleApiInterface googleApi, ApplicationService applicationService) {
-        this.googleApi = googleApi;
-        this.applicationService = applicationService;
-    }
 
     @Override
     public Optional<String> translate(String text, String sourceLanguage, String targetLanguage) {

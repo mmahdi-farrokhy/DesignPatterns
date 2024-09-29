@@ -1,13 +1,12 @@
 package Composite.Concept;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class Composite implements Component {
     private List<Component> components;
-
-    public Composite(List<Component> components) {
-        this.components = components;
-    }
 
     public void addComponent(Component component) {
         components.add(component);

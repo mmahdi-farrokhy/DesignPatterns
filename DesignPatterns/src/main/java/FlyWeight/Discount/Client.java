@@ -1,13 +1,12 @@
 package FlyWeight.Discount;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Date;
 
+@AllArgsConstructor
 public class Client {
     private DiscountFactory discountFactory;
-
-    public Client(DiscountFactory discountFactory) {
-        this.discountFactory = discountFactory;
-    }
 
     public void generateDiscount() {
         for (int i = 0; i < 100; i++) {

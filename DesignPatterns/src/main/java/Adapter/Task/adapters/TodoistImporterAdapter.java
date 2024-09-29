@@ -4,16 +4,14 @@ import Adapter.Task.Task;
 import Adapter.Task.TaskImporter;
 import Adapter.Task.apis.TodoistAPI;
 import Adapter.Task.tasks.TodoistTask;
+import lombok.AllArgsConstructor;
 
 import java.util.Arrays;
 import java.util.List;
 
+@AllArgsConstructor
 public class TodoistImporterAdapter implements TaskImporter {
     private TodoistAPI todoistAPI;
-
-    public TodoistImporterAdapter(TodoistAPI todoistAPI) {
-        this.todoistAPI = todoistAPI;
-    }
 
     @Override
     public List<Task> importTasks() {

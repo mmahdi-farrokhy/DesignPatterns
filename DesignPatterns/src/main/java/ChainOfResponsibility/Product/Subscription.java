@@ -23,6 +23,7 @@ public class Subscription {
         System.out.println("Subscription.findByUserAndProduct()");
         if (user == null || user.getUsername().isEmpty()) {
             return null;
+
         }
 
         return new Subscription(user.calculateAccountDurationMonths());

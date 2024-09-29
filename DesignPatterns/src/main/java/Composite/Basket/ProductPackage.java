@@ -1,13 +1,12 @@
 package Composite.Basket;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class ProductPackage implements BasketItem {
     private List<BasketItem> items;
-
-    public ProductPackage(List<BasketItem> items) {
-        this.items = items;
-    }
 
     @Override
     public double price() {

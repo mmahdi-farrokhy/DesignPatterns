@@ -1,13 +1,12 @@
 package Composite.ProjectManagement;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class TaskGroup implements ProjectComponent {
     private List<Task> tasks;
-
-    public TaskGroup(List<Task> tasks) {
-        this.tasks = tasks;
-    }
 
     @Override
     public void done() {

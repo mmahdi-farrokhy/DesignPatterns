@@ -1,13 +1,10 @@
 package ChainOfResponsibility.Product;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public class Product {
     private String title;
-
-    public Product(String title) {
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
-    }
 }

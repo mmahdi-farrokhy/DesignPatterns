@@ -1,15 +1,12 @@
 package ChainOfResponsibility.Product;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public abstract class Verifier {
     private final Verifier nextVerifier;
-
-    public Verifier(Verifier verifier) {
-        this.nextVerifier = verifier;
-    }
-
-    public Verifier getNextVerifier() {
-        return nextVerifier;
-    }
 
     public boolean verify(User user, Product product) {
         if (nextVerifier == null) {

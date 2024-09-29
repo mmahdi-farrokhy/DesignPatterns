@@ -1,11 +1,10 @@
 package Decorator.Report;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public abstract class ReportDecorator implements ReportGenerator {
     ReportGenerator reportGenerator;
-
-    public ReportDecorator(ReportGenerator reportGenerator) {
-        this.reportGenerator = reportGenerator;
-    }
 
     @Override
     public Report generate() {

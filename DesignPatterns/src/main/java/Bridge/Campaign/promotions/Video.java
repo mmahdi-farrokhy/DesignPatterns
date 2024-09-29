@@ -1,13 +1,11 @@
 package Bridge.Campaign.promotions;
 
 import Bridge.Campaign.Promotion;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class Video implements Promotion {
     private String fileUrl;
-
-    public Video(String fileUrl) {
-        this.fileUrl = fileUrl;
-    }
 
     @Override
     public String display() {

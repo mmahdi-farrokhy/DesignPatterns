@@ -1,17 +1,13 @@
 package Decorator.Report;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public class Report implements ReportGenerator {
     private final String title;
     private final String content;
-
-    public Report(String title, String content) {
-        this.title = title;
-        this.content = content;
-    }
-
-    public String getTitle() {
-        return title;
-    }
 
     @Override
     public Report generate() {

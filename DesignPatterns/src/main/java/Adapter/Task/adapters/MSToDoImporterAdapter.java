@@ -4,16 +4,14 @@ import Adapter.Task.Task;
 import Adapter.Task.TaskImporter;
 import Adapter.Task.apis.MSToDoAPI;
 import Adapter.Task.tasks.MSToDoTask;
+import lombok.AllArgsConstructor;
 
 import java.util.Arrays;
 import java.util.List;
 
+@AllArgsConstructor
 public class MSToDoImporterAdapter implements TaskImporter {
     private MSToDoAPI msToDoAPI;
-
-    public MSToDoImporterAdapter(MSToDoAPI msToDoAPI) {
-        this.msToDoAPI = msToDoAPI;
-    }
 
     @Override
     public List<Task> importTasks() {

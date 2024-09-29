@@ -1,17 +1,13 @@
 package ChainOfResponsibility.Product;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public class User {
     private String username;
     private UserType type;
-
-    public User(String username, UserType type) {
-        this.username = username;
-        this.type = type;
-    }
-
-    public String getUsername() {
-        return username;
-    }
 
     public int calculateAccountDurationMonths() {
         int accountDurationMonths = 0;

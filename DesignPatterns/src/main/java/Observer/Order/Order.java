@@ -3,6 +3,7 @@ package Observer.Order;
 import Observer.Contracts.Observer;
 import Observer.Contracts.ObserverStorage;
 import Observer.Contracts.Subject;
+import lombok.AllArgsConstructor;
 
 public class Order implements Subject {
     private final ObserverStorage observerStorage;

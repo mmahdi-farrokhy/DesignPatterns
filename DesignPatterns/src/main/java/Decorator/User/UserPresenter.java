@@ -1,11 +1,10 @@
 package Decorator.User;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class UserPresenter {
     private User user;
-
-    public UserPresenter(User user) {
-        this.user = user;
-    }
 
     public String getFullName() {
         return user.getFirstName() + " " + user.getLastName();

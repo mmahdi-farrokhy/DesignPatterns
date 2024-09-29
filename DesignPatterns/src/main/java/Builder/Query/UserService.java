@@ -1,11 +1,10 @@
 package Builder.Query;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class UserService {
     private SQLQueryBuilder queryBuilder;
-
-    public UserService(SQLQueryBuilder queryBuilder) {
-        this.queryBuilder = queryBuilder;
-    }
 
     public void fetchAllUsers() {
         this.queryBuilder

@@ -1,7 +1,12 @@
 package Decorator.User;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
 import java.util.Date;
 
+@AllArgsConstructor
+@Getter
 public class User {
     private String firstName;
     private String lastName;
@@ -13,22 +18,6 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.registerDate = registerDate;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Date getRegisterDate() {
-        return registerDate;
     }
 
     public UserPresenter presenter() {

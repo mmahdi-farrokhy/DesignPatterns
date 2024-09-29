@@ -1,16 +1,14 @@
 package Proxy.CashedRepository;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 import java.util.Optional;
 
+@AllArgsConstructor
 public class CachedProductRepository implements ProductRepositoryInterface {
     private final ProductRepositoryInterface productRepository;
     private final CacheInterface cache;
-
-    public CachedProductRepository(ProductRepositoryInterface productRepository, CacheInterface cache) {
-        this.productRepository = productRepository;
-        this.cache = cache;
-    }
 
     @Override
     public List<Product> all() {

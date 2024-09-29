@@ -1,15 +1,13 @@
 package Facade.Order;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class PlaceOrder {
     private StockService stockService;
     private CouponService couponService;
-
-    public PlaceOrder(StockService stockService, CouponService couponService) {
-        this.stockService = stockService;
-        this.couponService = couponService;
-    }
 
     public void place(Basket basket) {
         // check product stock

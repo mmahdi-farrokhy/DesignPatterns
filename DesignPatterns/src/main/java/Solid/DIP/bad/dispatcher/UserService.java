@@ -1,11 +1,10 @@
 package Solid.DIP.bad.dispatcher;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class UserService {
     private final BeeDispatcher dispatcher;
-
-    public UserService(BeeDispatcher dispatcher) {
-        this.dispatcher = dispatcher;
-    }
 
     public void register(UserRegisterParams params) {
         // User registration process

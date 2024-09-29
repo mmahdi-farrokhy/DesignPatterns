@@ -1,5 +1,8 @@
 package Adapter.Payment;
 
+import lombok.Getter;
+
+@Getter
 public class Invoice {
     private double amount;
 
@@ -9,9 +12,5 @@ public class Invoice {
         }
 
         this.amount = amount;
-    }
-
-    public double getAmount() {
-        return amount;
     }
 }

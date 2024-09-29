@@ -1,12 +1,15 @@
 package Strategy.Discount;
 
+import lombok.Getter;
+
 import java.time.LocalDate;
 
+@Getter
 public class User {
-    private String username;
-    private String password;
-    private LocalDate birthDate;
-    private LocalDate registrationDate;
+    private final String username;
+    private final String password;
+    private final LocalDate birthDate;
+    private final LocalDate registrationDate;
     private double monthlyOrdersPrice;
     private double weeklyOrdersPrice;
 
@@ -15,18 +18,6 @@ public class User {
         this.password = password;
         this.birthDate = birthDate;
         this.registrationDate = LocalDate.now();
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
     }
 
     public void updateMonthlyOrdersPrice(double amount) {
@@ -43,17 +34,5 @@ public class User {
         }
 
         weeklyOrdersPrice += amount;
-    }
-
-    public double getMonthlyOrdersPrice() {
-        return monthlyOrdersPrice;
-    }
-
-    public double getWeeklyOrdersPrice() {
-        return weeklyOrdersPrice;
-    }
-
-    public LocalDate getRegistrationDate() {
-        return registrationDate;
     }
 }

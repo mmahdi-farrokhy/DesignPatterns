@@ -1,12 +1,11 @@
 package Solid.DIP.good.auth;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Auth {
 
     private final IUserProvider userProvider;
-
-    public Auth(IUserProvider userProvider) {
-        this.userProvider = userProvider;
-    }
 
     public boolean check(String username, String password) {
         boolean userExists = userProvider.findUser(username);

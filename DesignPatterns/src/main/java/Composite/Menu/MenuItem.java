@@ -1,13 +1,11 @@
 package Composite.Menu;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class MenuItem implements MenuComponent {
     private String url;
     private String title;
-
-    public MenuItem(String url, String title) {
-        this.url = url;
-        this.title = title;
-    }
 
     @Override
     public String build() {

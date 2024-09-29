@@ -1,13 +1,12 @@
 package FlyWeight.Faker;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Map;
 
+@AllArgsConstructor
 public class UserFactory {
     private Map<String, UserProfile> usersProfile;
-
-    public UserFactory(Map<String, UserProfile> usersProfile) {
-        this.usersProfile = usersProfile;
-    }
 
     public User createUser(
             String firstName,

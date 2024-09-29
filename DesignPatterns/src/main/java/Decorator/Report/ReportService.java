@@ -1,11 +1,10 @@
 package Decorator.Report;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class ReportService {
     private final Report report;
-
-    public ReportService(Report report) {
-        this.report = report;
-    }
 
     public String getReportContent() {
         ReportWithSubject reportWithSubject = new ReportWithSubject(report, "Sales in 2024");

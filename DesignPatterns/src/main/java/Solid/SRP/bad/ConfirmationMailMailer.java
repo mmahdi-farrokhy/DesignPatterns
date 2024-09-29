@@ -1,15 +1,12 @@
 package Solid.SRP.bad;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class ConfirmationMailMailer {
     private final ITemplateEngine templateEngine;
     private final ITranslator translator;
     private final IMailer mailer;
-
-    public ConfirmationMailMailer(ITemplateEngine templateEngine, ITranslator translator, IMailer mailer) {
-        this.templateEngine = templateEngine;
-        this.translator = translator;
-        this.mailer = mailer;
-    }
 
     public void sendTo(User user) {
         Message message = createMessageFor(user);
@@ -26,6 +23,4 @@ public class ConfirmationMailMailer {
 
         return new Message(subject, body, user.getEmailAddress());
     }
-
-
 }

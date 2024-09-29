@@ -1,8 +1,11 @@
 package Facade.Order;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class Basket {
     private List<Product> items = new ArrayList<>();
     private String coupon;
@@ -18,15 +21,7 @@ public class Basket {
                 .sum();
     }
 
-    public List<Product> getItems() {
-        return items;
-    }
-
     public void applyCoupon(String coupon) {
         this.coupon = coupon;
-    }
-
-    public String getCoupon() {
-        return coupon;
     }
 }

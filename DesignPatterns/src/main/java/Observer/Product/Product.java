@@ -3,6 +3,7 @@ package Observer.Product;
 import Observer.Contracts.Observer;
 import Observer.Contracts.ObserverStorage;
 import Observer.Contracts.Subject;
+import lombok.AllArgsConstructor;
 
 public class Product implements Subject {
     private double price;

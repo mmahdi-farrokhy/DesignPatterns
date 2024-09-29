@@ -1,13 +1,11 @@
 package Solid.DIP.good.auth;
 
-import org.example.DIP.bad.auth.MySQLConnection;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class MySQLUserProvider implements IUserProvider {
     private final MySQLConnection connection;
-
-    public MySQLUserProvider(MySQLConnection connection) {
-        this.connection = connection;
-    }
 
     @Override
     public boolean findUser(String username) {

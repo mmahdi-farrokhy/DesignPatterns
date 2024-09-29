@@ -1,13 +1,12 @@
 package Composite.Menu;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 
+@AllArgsConstructor
 public class MenuList implements MenuComponent {
     private List<MenuComponent> menuComponents;
-
-    public MenuList(List<MenuComponent> menuComponents) {
-        this.menuComponents = menuComponents;
-    }
 
     public void add(MenuComponent menuComponent) {
         menuComponents.add(menuComponent);

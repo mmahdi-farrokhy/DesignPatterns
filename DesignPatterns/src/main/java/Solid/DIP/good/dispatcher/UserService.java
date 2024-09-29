@@ -1,11 +1,10 @@
 package Solid.DIP.good.dispatcher;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class UserService {
     private final IDispatcher dispatcher;
-
-    public UserService(IDispatcher dispatcher) {
-        this.dispatcher = dispatcher;
-    }
 
     public void register(UserRegisterParams params) {
         // User registration process

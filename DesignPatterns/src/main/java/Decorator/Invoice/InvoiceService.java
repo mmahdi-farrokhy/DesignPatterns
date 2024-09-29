@@ -1,16 +1,14 @@
 package Decorator.Invoice;
 
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
 public class InvoiceService {
+    @NonNull
     private InvoicePrice invoicePrice;
+    @NonNull
     private Invoice invoice;
-
-    public InvoiceService(InvoicePrice invoicePrice) {
-        this.invoicePrice = invoicePrice;
-    }
-
-    public InvoiceService(Invoice invoice) {
-        this.invoice = invoice;
-    }
 
     public double getInvoicePrice() {
         return invoicePrice.getPrice();

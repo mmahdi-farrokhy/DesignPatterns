@@ -1,15 +1,13 @@
 package Proxy.MediaPlayer;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Optional;
 
+@AllArgsConstructor
 public class MediaDownloaderProxy implements Downloader {
     private final Downloader downloader;
     private final LocalFileService localFileService;
-
-    public MediaDownloaderProxy(Downloader downloader, LocalFileService localFileService) {
-        this.downloader = downloader;
-        this.localFileService = localFileService;
-    }
 
     @Override
     public Optional<String> download(String url) {

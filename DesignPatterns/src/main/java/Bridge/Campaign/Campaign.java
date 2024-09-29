@@ -1,14 +1,13 @@
 package Bridge.Campaign;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public abstract class Campaign {
 
     protected Promotion promotion;
 
-    public Campaign(Promotion promotion) {
-        this.promotion = promotion;
-    }
-
-    public void changePromotion(Promotion promotion){
+    public void changePromotion(Promotion promotion) {
         this.promotion = promotion;
     }
 

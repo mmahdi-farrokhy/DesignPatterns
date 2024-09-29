@@ -1,5 +1,8 @@
 package Strategy.Payment;
 
+import lombok.Getter;
+
+@Getter
 public class Customer {
     private double credit;
 
@@ -9,9 +12,5 @@ public class Customer {
 
     public void decreaseCredit(double amount) {
         this.credit -= amount;
-    }
-
-    public double getCredit() {
-        return credit;
     }
 }

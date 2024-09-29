@@ -1,13 +1,12 @@
 package FlyWeight.Game;
 
+import lombok.AllArgsConstructor;
+
 import java.util.Map;
 
+@AllArgsConstructor
 public class PlayerFactory {
     private Map<String, PlayerProperties> playersProperties;
-
-    public PlayerFactory(Map<String, PlayerProperties> playersProperties) {
-        this.playersProperties = playersProperties;
-    }
 
     public Player createPlayer(String name,
                                int xp,
