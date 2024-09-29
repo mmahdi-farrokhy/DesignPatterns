@@ -1,0 +1,14 @@
+package Composite.Basket;
+
+public class SingleProduct implements BasketItem {
+    private double price;
+
+    public SingleProduct(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public double price() {
+        return price;
+    }
+}
