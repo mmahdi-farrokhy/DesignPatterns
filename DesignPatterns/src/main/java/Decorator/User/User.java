@@ -13,13 +13,6 @@ public class User {
     private String email;
     private Date registerDate;
 
-    public User(String firstName, String lastName, String email, Date registerDate) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.registerDate = registerDate;
-    }
-
     public UserPresenter presenter() {
         return new UserPresenter(this);
     }
