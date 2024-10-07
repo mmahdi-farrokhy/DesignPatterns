@@ -223,10 +223,10 @@ We have a class called **Product** that implements **Subject** and has field of 
   - When an algorithm should be applied only on some of elements of a hierarchy.
 
 - Implementation: we have:
-- An interface called **Component** with a method called **accept(Visitor visitor)** that can accept or refuse an implementation for an object.
-- An interface called **Visitor** that has one method for each component.
-- Algorithm classes that implement **Visitor**.
-- A package called **components** containing classes that implement **Component**.
+    - An interface called **Component** with a method called **accept(Visitor visitor)** that can accept or refuse an implementation for an object.
+    - An interface called **Visitor** that has one method for each component.
+    - Algorithm classes that implement **Visitor**.
+    - A package called **components** containing classes that implement **Component**.
 ---
 [Mediator Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Mediator): A behavioral design pattern that is used as an interface between objects when we cannot create a direct dependency.
 
