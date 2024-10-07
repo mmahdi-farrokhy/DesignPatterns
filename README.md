@@ -103,7 +103,7 @@ Product product = ProductBuilder.aProduct()
 
 - Implementation: We have 2 packages: **adapters** and **providers** and an interface called **Provider** which defines the business rules of our system. The providers implement **Provider** interface. The adapters are classes that also implement **Provider** and have an instance field of the incompatible third-party API and maintain the compatibility.
 ---
-[Bridge Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Bridge): A structural design patter that to bridge interface or abstract classes that a close relationship, but must be developed separately.
+[Bridge Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Bridge): A structural design patter to bridge interface or abstract classes that a close relationship, but must be developed separately.
 
 - Applicability of bridge:
   - When a monolithic class that has different implementations for a functionality is divided into multiple services. Just like a class that can use multiple database servers. Both the class and the database server can have multiple implementations.
