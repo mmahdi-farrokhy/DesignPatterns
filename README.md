@@ -6,6 +6,7 @@ Single Responsibility Principle: One class should have only one reason to change
   - Methods using different instances
   - Private methods that do extra work.
 
+
 - Solution: Use collaborator class that handles minor tasks that are done in the main class.
 ---
 Open Close Principle: We should change a class’s or add new features behavior without changing its source code.
@@ -20,6 +21,7 @@ Open Close Principle: We should change a class’s or add new features behavior 
   - Creating objects of other classes inside current class.
   - Existence of protected methods inside current class that changing it leads to changing the class.
 
+
 - Solution: Use only abstract instances in the current class.
 ---
 Liskov Substitution Principle: Classes that implement an interface or abstract class, should be completely replaceable.
@@ -29,6 +31,7 @@ Liskov Substitution Principle: Classes that implement an interface or abstract c
   - Return types should match the interface inside the derived classes.
   - There are conditions that will not be applied to all sub-classes.
   - Sub-class has some public methods in addition to the base class.
+
 
 - Solution to violation #1: Interface isolation technique
 - Solution to violation #2: Only happens in weakly typed languages.
@@ -41,6 +44,7 @@ Interface Segregation Principle: Interfaces should be fine-grained, meaning they
   - The interface can be used in numerous different use cases.
   - Knowledge Sharing: Using concrete classes inside method, especially constructors, instead of interfaces as parameters.
 
+
 - Solution: Interface isolation technique
 ---
 Dependency Inversion Principle: Dependency should be defined on abstraction, not concretion. We should not be aware of implementation details, and this lack of awareness can help us in replacement stage. Client class does not determine the required type, it only determines the required rule and system will provide the specific type.
@@ -48,6 +52,7 @@ Dependency Inversion Principle: Dependency should be defined on abstraction, not
 - Signs of violating DIP:
   - High level class depends on low level class.
   - Vendor Lock-In: A package is developed using a framework and can not be used with other technologies.
+
 
 - Solution to violation #2: Adapter design pattern.
 ---
