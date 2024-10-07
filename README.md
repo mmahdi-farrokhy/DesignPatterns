@@ -144,7 +144,7 @@ Product product = ProductBuilder.aProduct()
 - Applicability of flyweight: we use this design pattern only when new need to hold a large amount of data inside RAM.
 - Implementation: If class **X** has 7 fields, that 2 of them is unique for each instance, but the combination of the other fields can be duplicated, we put these 5 fields inside another class called **XConstraint** and define a field of type **XConstraint** inside class **X**. We define a map with string keys and **XConstraint** values inside the client class which stores the shared objects along side their hash code. Every time an object of type **X** is created in method **create()** of class **XFactory**, we check if its **XConstraint** exists in the map; if so, it is read from the map and will not be instantiated.
 ---
-[Chain Of Responsibility Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/ChainOfResponsibility): A behavioral design pattern that is used when a chain of commands is going t be executed, and each ring decides if the next one should be executed.
+[Chain Of Responsibility Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/ChainOfResponsibility): A behavioral design pattern that is used when a chain of commands is going to be executed, and each link decides if the next one should be executed.
 
 - Applicability of chain of responsibility:
   - When the program expects different kinds of requests, but their type is not known and the order is not determined.
