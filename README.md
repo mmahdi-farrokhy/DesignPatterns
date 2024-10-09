@@ -1,4 +1,4 @@
-Single Responsibility Principle: One class should have only one reason to change.
+[Single Responsibility Principle](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Solid/SRP): One class should have only one reason to change.
 
 - Signs of violating SRP:
   - Too many instance variables in a class
@@ -9,7 +9,7 @@ Single Responsibility Principle: One class should have only one reason to change
 
 - Solution: Use collaborator class that handles minor tasks that are done in the main class.
 ---
-Open Close Principle: We should change a class’s or add new features behavior without changing its source code.
+[Open Close Principle](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Solid/OCP): We should change a class’s or add new features behavior without changing its source code.
 
 - OCP from Robert C. Martin’s perspective: Reduce amount of change in open source
 - OCP from Bertrand Meyer’s perspective: Changes should not disturb the working software and releasing a new version should not break the old ones.
@@ -24,7 +24,7 @@ Open Close Principle: We should change a class’s or add new features behavior 
 
 - Solution: Use only abstract instances in the current class.
 ---
-Liskov Substitution Principle: Classes that implement an interface or abstract class, should be completely replaceable.
+[Liskov Substitution Principle](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Solid/LSP): Classes that implement an interface or abstract class, should be completely replaceable.
 
 - Signs of violating LSP:
   - A class can not provide a complete implementation for its interface, so some methods have an empty implementation.
@@ -38,7 +38,7 @@ Liskov Substitution Principle: Classes that implement an interface or abstract c
 - Solution to violation #3: Interface isolation technique
 - Solution to violation #4: Interface isolation technique
 ---
-Interface Segregation Principle: Interfaces should be fine-grained, meaning they should only have necessary methods aligning the client’s requirements.
+[Interface Segregation Principle](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Solid/ISP): Interfaces should be fine-grained, meaning they should only have necessary methods aligning the client’s requirements.
 
 - Signs of violating ISP:
   - The interface can be used in numerous different use cases.
