@@ -47,7 +47,7 @@ Interface Segregation Principle: Interfaces should be fine-grained, meaning they
 
 - Solution: Interface isolation technique
 ---
-Dependency Inversion Principle: Dependency should be defined on abstraction, not concretion. We should not be aware of implementation details, and this lack of awareness can help us in replacement stage. Client class does not determine the required type, it only determines the required rule and system will provide the specific type.
+[Dependency Inversion Principle]([url](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Solid/DIP)): Dependency should be defined on abstraction, not concretion. We should not be aware of implementation details, and this lack of awareness can help us in replacement stage. Client class does not determine the required type, it only determines the required rule and system will provide the specific type.
 
 - Signs of violating DIP:
   - High level class depends on low level class.
