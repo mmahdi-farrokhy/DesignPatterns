@@ -176,15 +176,15 @@ Inside package **invoker**, is a client that uses the required command and handl
   - When it is required to track an object for a limited time.
 
 - Implementation: There is a package called **contracts** containing:
-- An interface called **Observer** with a method called **update(Subject subject)**
-- An interface called **Subject** with 3 methods:
-- **attach(String name, Observer observer)**
-- **detach(String name, Observer observer)**
-- **notifySubscribers()**
-- A class called **ObserverStorage** which contains:
-- A map of strings and **Observer**s.
-- A method called **attach(String name, Observer observer)** that adds a new element to the map.
-- A method called **detach(String name, Observer observer)** that removes an element from the map.
+  - An interface called **Observer** with a method called **update(Subject subject)**
+  - An interface called **Subject** with 3 methods:
+  - **attach(String name, Observer observer)**
+  - **detach(String name, Observer observer)**
+  - **notifySubscribers()**
+  - A class called **ObserverStorage** which contains:
+  - A map of strings and **Observer**s.
+  - A method called **attach(String name, Observer observer)** that adds a new element to the map.
+  - A method called **detach(String name, Observer observer)** that removes an element from the map.
 
 We have a class called **Product** that implements **Subject** and has field of type **ObserverStorage**, a class called **ProductObserver** that implement **Observer**.
 
