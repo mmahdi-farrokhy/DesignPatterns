@@ -182,9 +182,9 @@ Inside package **invoker**, is a client that uses the required command and handl
   - **detach(String name, Observer observer)**
   - **notifySubscribers()**
   - A class called **ObserverStorage** which contains:
-  - A map of strings and **Observer**s.
-  - A method called **attach(String name, Observer observer)** that adds a new element to the map.
-  - A method called **detach(String name, Observer observer)** that removes an element from the map.
+    - A map of strings and **Observer**s.
+    - A method called **attach(String name, Observer observer)** that adds a new element to the map.
+    - A method called **detach(String name, Observer observer)** that removes an element from the map.
 
 We have a class called **Product** that implements **Subject** and has field of type **ObserverStorage**, a class called **ProductObserver** that implement **Observer**.
 
