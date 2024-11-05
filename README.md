@@ -185,8 +185,8 @@ Inside package **invoker**, is a client that uses the required command and handl
     - A map of strings and **Observer**s.
     - A method called **attach(String name, Observer observer)** that adds a new element to the map.
     - A method called **detach(String name, Observer observer)** that removes an element from the map.
-
-We have a class called **Product** that implements **Subject** and has field of type **ObserverStorage**, a class called **ProductObserver** that implement **Observer**.
+  - A class called **Product** that implements **Subject** and has field of type **ObserverStorage**
+  - A class called **ProductObserver** that implement **Observer**.
 
 ---
 [State Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/State): A behavioral design pattern that changes behavior of an object when its state changes. Some operations will be locked or unlocked for the object based on its state.
