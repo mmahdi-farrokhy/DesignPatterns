@@ -174,6 +174,7 @@ Inside package **invoker**, is a client that uses the required command and handl
 - Applicability of observer:
   - When changing state of an object should change other objects and we don’t know which objects should be affected.
   - When it is required to track an object for a limited time.
+  - When a low level object needs to notify high level objects that something has happened.
 
 - Implementation: There is a package called **contracts** containing:
   - An interface called **Observer** with a method called **update(Subject subject)**
