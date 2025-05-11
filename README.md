@@ -197,7 +197,7 @@ Inside package **invoker**, is a client that uses the required command and handl
   - If different values of class fields lead to different behaviors for the class and it requires a lot of if-else statements to be handled.
   - When we have a finite state machine and different states have duplicated code and we need to reduce it.
 
-- Implementation: We have a package called **states** contaning an interface called **ProductStatus** and classes that implement **ProductStatus** and define the behavior of the class in different states. There is also one method for each status inside **ProductStatus** which is abstract and should be implemented inside sub-classes.
+- Implementation: We have a package called **states** containing an interface called **ProductStatus** and classes that implement **ProductStatus** and define the behavior of the class in different states. There is also one method for each status inside **ProductStatus** which is abstract and should be implemented inside sub-classes.
 ---
 [Strategy Design Pattern](https://github.com/mmahdi-farrokhy/DesignPatterns/tree/main/DesignPatterns/src/main/java/Strategy): A behavioral design pattern that is used when a job is implemented in different algorithms, and lets us switch between them.
 
